@@ -29,4 +29,6 @@ ARGV.each do |arg|
     result << i_arg if !is_inserted
 end
 
-puts result.sort!
+result.sort! { |first_num, second_num| first_num <=> second_num }
+
+puts result
